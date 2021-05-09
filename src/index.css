@@ -1,0 +1,139 @@
+html {
+  font-family: sans-serif;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(100, 120, 136);
+
+  
+  
+}
+
+.home{
+  text-align: left;
+  align-content: center;
+  display: flex;
+
+}
+
+.homeLink{
+  font-size: 2rem;
+  font-style: normal;
+}
+
+.homeLista{
+  font-size: 1.5rem;
+  color: #767a77;
+}
+
+
+section{
+  text-align: center;
+  align-content: center;
+  display: flex;
+}
+
+
+label{
+  text-align: center;
+  align-content: center;
+  display: flex;
+}
+
+
+button {
+  background-color: #58bd70;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #b9d1bf;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+table {
+  
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+th {
+  background-color: rgb(235,235,235);
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(250,250,250);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(245,245,245);
+}
+
+caption {
+  padding: 10px;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 50px;
+  margin:8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing:border-box;
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 12px 50px;
+  margin:8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing:border-box;
+
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+

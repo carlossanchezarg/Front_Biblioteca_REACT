@@ -1,0 +1,7 @@
+{
+    "personas": "http://localhost:5000/persona/",
+    "libros": "http://localhost:5000/libro/",
+    "prestar": "http://localhost:5000/libro/prestar/",
+    "devolver": "http://localhost:5000/libro/devolver/",
+    "categorias": "http://localhost:5000/categoria/"
+}
