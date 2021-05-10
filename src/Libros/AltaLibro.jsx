@@ -67,7 +67,7 @@ export default function AltaLibro(props) {
                 alert("Ninguno de los campos puede ser vacío.")
             }
             else{
-                const libroNoRepetido=listaLibros.filter(unLibro=>unLibro.nombre==form.nombre).length==0;
+                const libroNoRepetido=listaLibros.filter(unLibro=>unLibro.nombre.toUpperCase()==form.nombre.toUpperCase()).length==0;
                 if(libroNoRepetido){
                     await axios.post(rutas.libros, form);
                     props.history.push('/libros/');

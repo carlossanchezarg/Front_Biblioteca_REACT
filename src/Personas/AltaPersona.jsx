@@ -69,7 +69,7 @@ export default function AltaPersona(props) {
                 alert("No puede dejar vacío ninguno de los campos.")
             }
             else{
-                const mailNoRepetido=listadoPersonas.filter(unaPersona=>unaPersona.email==form.email).length==0;
+                const mailNoRepetido=listadoPersonas.filter(unaPersona=>unaPersona.email.toUpperCase()==form.email.toUpperCase()).length==0;
             
                 if(mailNoRepetido){
                     await axios.post(rutas.personas, form);

@@ -8,12 +8,16 @@ import rutas from '../config.json';
 export default function ListadoLibros(props) {
 
     const [listaLibros, setListado] = React.useState([]);
+    const [hayLibros, setHayLibros] = React.useState(true);
     const [error, setError] = React.useState('');
      
     const consultaLibros = async() => {
         try {
             const respuesta = await axios.get(rutas.libros);
             setListado(respuesta.data);
+            if(respuesta.data.length==0){
+                setHayLibros(false)
+            }
             setError('');
         } 
         catch(e) {
@@ -66,8 +70,8 @@ export default function ListadoLibros(props) {
     const borrarLibro = async(idLibroABorrar) => {
         try {
             if(!listaLibros.filter((unLibro)=>idLibroABorrar==unLibro.id).persona_id){
-            await axios.delete(rutas.libros + idLibroABorrar);
-            consultaLibros();
+                await axios.delete(rutas.libros + idLibroABorrar);
+                consultaLibros();
             }else{
                 alert("No se puede borrar. Ese libro esta prestado!")
             }
@@ -112,7 +116,7 @@ export default function ListadoLibros(props) {
                     </tr>
                 </thead>
                 <tbody>
-                    {listaLibros.map(unLibro => (
+                    {hayLibros && listaLibros.map(unLibro => (
                         <tr>
                             <td>{unLibro.nombre}</td>
                             <td>{unLibro.descripcion}</td> 

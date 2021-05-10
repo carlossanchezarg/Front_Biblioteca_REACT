@@ -42,7 +42,7 @@ export default function AltaCategoria(props) {
                 alert("Este campo no puede ser vacío.")
             }
             else{
-                const categoriaNoRepetida=categorias.filter(unaCategoria=>unaCategoria.nombre==form.nombre).length==0;
+                const categoriaNoRepetida=categorias.filter(unaCategoria=>unaCategoria.nombre.toUpperCase()==form.nombre.toUpperCase()).length==0;
                 if(categoriaNoRepetida){
                     await axios.post(rutas.categorias, form);
                     props.history.push('/categorias/');
