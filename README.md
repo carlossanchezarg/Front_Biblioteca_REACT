@@ -1,6 +1,6 @@
 
 # Cliente para administrar biblioteca en React
-### Esta aplicación sirve para hacer operaciones CRUD a través de una API Rest, la API desarrolada como backend esta en este repo: [API Biblioteca](https://github.com/carlossanchezarg/TP_BIBLIOTECA)
+### Esta aplicación sirve para hacer operaciones CRUD a través de una API Rest.La API desarrollada como backend esta en este repo: [API Biblioteca](https://github.com/carlossanchezarg/TP_BIBLIOTECA)
 ----------------------------------------------------------------
 # Getting Started with Create React App
 
